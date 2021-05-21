@@ -10,4 +10,15 @@ object Dao {
         stmt.execute()
         stmt.getResultSet()
     }
+
+    def scen1(conn: Connection): ResultSet = {
+        val stmt = conn.prepareStatement("select branch.branch BRANCH, sum(conscount.count) CONSUMERS "+
+                                            "from branch left join conscount " +
+                                            "on branch.beverage = conscount.beverage " +
+                                            "group by branch.branch " +
+                                            "having branch.branch = 'Branch1' or branch.branch = 'Branch2'")
+        
+        stmt.execute()
+        stmt.getResultSet()
+    }
 }

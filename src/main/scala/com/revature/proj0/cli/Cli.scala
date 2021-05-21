@@ -36,6 +36,12 @@ class Cli {
 
                     val conn = ConnectionUtil.getConnection(db, user, pass)
                     val rs = Dao.scen1(conn)
+
+                    println("\nBRANCH  CONSUMERS")
+                    while(rs.next()) {
+                        println(f"${rs.getString("branch")}%-7s ${rs.getString("consumers")}")
+                    }
+                    
                     conn.close
                 }
                 
