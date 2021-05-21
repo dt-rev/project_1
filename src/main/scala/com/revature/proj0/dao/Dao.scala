@@ -7,9 +7,7 @@ import java.sql.ResultSet
 object Dao {
     def test(conn: Connection): ResultSet = {
         val stmt = conn.prepareStatement("show databases")
-
         stmt.execute()
-
         stmt.getResultSet()
     }
 }
