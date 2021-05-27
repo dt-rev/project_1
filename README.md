@@ -29,16 +29,16 @@ To-do list:
 
 ## Scenarios
 ### Scenario 1
-What is the total number of consumers for Branch1?
+What is the total number of consumers for Branch1?  
 What is the number of consumers for the Branch2?
 
 
 ### Scenario 2
-What is the most consumed beverage on Branch1?
+What is the most consumed beverage on Branch1?  
 What is the least consumed beverage on Branch2?
 
 ### Scenario 3
-What are the beverages available on Branch10, Branch8, and Branch1?
+What are the beverages available on Branch10, Branch8, and Branch1?  
 What are the common beverages available in Branch4, Branch7?
 
 ### Scenario 4
